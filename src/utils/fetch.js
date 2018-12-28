@@ -18,11 +18,11 @@ fetch.interceptors.request.use(config => {
 fetch.interceptors.response.use((response) => {
   const { status, data } = response;
   // 只返回code为1时的数据，其他状态不返回
-  if (status === 200 && data.code === 1) {
+  // if (status === 200 && data.code === 1) {
     return data;
-  }
-  Bus.$emit('_Error', data.msg);
-  return Promise.reject(data);
+  // }
+  // Bus.$emit('_Error', data.msg);
+  // return Promise.reject(data);
 }, (error) => {
   const res = error.response;
   if (res.status === 401) {

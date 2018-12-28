@@ -8,3 +8,11 @@ export const saveInfo = (data) => {
     })
 
 }
+
+export const getInfo = () => {
+    return fetch({
+        url:'getinfos',
+        method:'get',
+    })
+
+}
