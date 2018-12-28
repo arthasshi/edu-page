@@ -3,6 +3,9 @@ import App from './App.vue'
 import router from './router'
 import MuseUI from 'muse-ui';
 import 'muse-ui/dist/muse-ui.css';
+import Toast from 'muse-ui-toast';
+
+Vue.use(Toast);
 
 Vue.use(MuseUI);
 

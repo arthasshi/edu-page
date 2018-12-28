@@ -75,6 +75,8 @@ export default {
         if(result){
           saveInfo(this.validateForm).then(res=>{
             console.log(res)
+            this.$toast.success('提交成功');
+            this.clear()
           }).catch(error=>{
             console.log(error)
           })
