@@ -2,7 +2,7 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">介绍一下你自己</router-link> |
-      <router-link to="/about">了解一下课程</router-link>
+      <router-link to="/about"><u>了解一下课程</u></router-link>
     </div>
     <router-view/>
   </div>
@@ -20,7 +20,8 @@
   padding: 30px;
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: #ff3745;
+    font-size: 18px;
     &.router-link-exact-active {
       color: #42b983;
     }
